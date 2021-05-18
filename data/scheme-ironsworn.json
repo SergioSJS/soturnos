@@ -12,7 +12,7 @@
                 "text" : "Personagem",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
-                "grouped_color" : "primary",
+                "grouped_color" : "warning",
                 "tables" : [
                     {"text" : "Nome", "table" : "Nome", "repeat" : 1},
                     {"text" : "Classe", "table" : "Classe", "repeat" : 1}]
@@ -21,7 +21,7 @@
                 "text" : "Classe",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
-                "grouped_color" : "primary",
+                "grouped_color" : "warning",
                 "tables" : [
                     {"text" : "Classe", "table" : "Classe", "repeat" : 1}]
             }
@@ -37,7 +37,7 @@
                 "text" : "Ocultista",        
                 "icon" : "fas fa-exclamation fa-lg",
                 "grouped" : true,
-                "grouped_color" : "secondary",
+                "grouped_color" : "warning",
                 "tables" : [
                     {"text" : "Ocultista<br>• Habilidade", "table" : "Ocultista Habilidade", "repeat" : 1},
                     {"text" : "Habilidade (Determinação)", "table" : "Ocultista Habilidade (Determinação)", "repeat" : 1},
