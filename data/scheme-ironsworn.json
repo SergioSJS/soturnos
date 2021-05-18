@@ -28,7 +28,7 @@
             
         }
     },
-    "core" : {
+    "classes" : {
         "text" :  "Classes",
         "color" : "secondary",
         "column" : 1,
@@ -42,7 +42,22 @@
                     {"text" : "Ocultista<br>• Habilidade", "table" : "Ocultista Habilidade", "repeat" : 1},
                     {"text" : "Habilidade (Determinação)", "table" : "Ocultista Habilidade (Determinação)", "repeat" : 1},
                     {"text" : "Ocupação", "table" : "Ocultista Ocupação", "repeat" : 1}]
-            }        
+            }
+        }
+    },
+    "Nomes" : {
+        "text" :  "Nomes",
+        "color" : "secondary",
+        "column" : 2,
+        "buttons" : {           
+            "button_1" : {
+                "text" : "Nome Personagem",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Nome", "table" : "Nome", "repeat" : 1}]
+            }
         }
     }
 }

@@ -198,7 +198,7 @@ function table_choose(field) {
                     str_temp += '({0}) {1}'.format(idx+1, table_text);
                 }
                 else{
-                    str_temp += '({0}) <text class="text-info-iron">"{1}"</text>'.format(idx+1, table_text);
+                    str_temp += '({0}) <text class="text-info-iron">"{1}"</text>'.format((idx+1).toString(), table_text);
                 }
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
@@ -219,7 +219,7 @@ function table_choose(field) {
                         str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
                     }
                     else{
-                        str_temp += '<i>({0})</i>({1}) <text class="text-info-iron">"{2}"</text><br/>'.format(table_text, (idx+1).toString(), table_text);
+                        str_temp += '({0}) <text class="text-info-iron">"{1}"</text>'.format((idx+1).toString(), table_text);
                     }
                     
                 }
