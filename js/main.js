@@ -1,6 +1,6 @@
 $('#ModalLog').modal({show:false})
-table_data_str = "table_data_en"
-scheme_data_str = "scheme_data_en"
+table_data_str = "soturnos_table_data"
+scheme_data_str = "soturnos_scheme_data"
 
 function findBootstrapEnvironment() {
     let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
@@ -259,9 +259,11 @@ function table_choose_recursive(field) {
         }
         else{
             var str_temp = '';  // accumulate str
+            str_temp +='<i>({0})</i>({1})'.format(field, (idx+1).toString())
             for (obj in temp_str){
+                str_temp += '<br/>'                
                 var table_text = temp_str[obj];
-                // if special characteres for relationship between tables
+                // if special characteres for relationship between tables                
                 if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2));
                     str_temp +=  '{0}'.format(table_text);
@@ -271,7 +273,7 @@ function table_choose_recursive(field) {
                     str_temp +=  '{0}'.format(table_text);
                 }
                 else{
-                    str_temp += '{0}'.format(table_text);
+                    str_temp += '<text class="text-info-iron">"{0}"</text>'.format(table_text);
                 }
             }
             return str_temp;

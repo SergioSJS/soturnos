@@ -1,10 +1,10 @@
 {
     "name": "Starforged Oracles",
     "short_name": "Starforged",
-    "start_url": "https://sergiosjs.github.io/starforged_oracle/en/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#373737",
-    "description": "Starforged Oracles",
+    "background_color": "#75161c",
+    "description": "Soturnos - Forjado nas sombras",
     "icons": [
         {
           "src": "images/icon-512x512.png",
