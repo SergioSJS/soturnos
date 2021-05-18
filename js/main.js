@@ -219,7 +219,7 @@ function table_choose(field) {
                         str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
                     }
                     else{
-                        str_temp += '({0}) <text class="text-info-iron">"{1}"</text>'.format((idx+1).toString(), table_text);
+                        str_temp += '({0}) <text class="text-info-iron">"{1}"</text><br/>'.format((idx+1).toString(), table_text);
                     }
                     
                 }
