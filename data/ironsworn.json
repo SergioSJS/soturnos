@@ -75,11 +75,21 @@
    ],
 
    "Classe":[
-      ["Ocultista", 
-         "##Ocultista Habilidade", 
-         "##Ocultista Habilidade (Determinação)", 
-         "##Ocultista Ocupação"
-      ]
+      ["Ocultista", "&&classe_Ocultista"],
+      ["Archote", "&&classe_Archote"],
+      ["Combatente", "&&classe_Combatente"],
+      ["Saqueador", "&&classe_Saqueador"],
+      ["Caçador", "&&classe_Caçador"],
+      ["Carranca", "&&classe_Carranca"]
+   ],
+
+   "Personagem":[
+      ["Ocultista", "&&classe_Ocultista", "&&nome_personagem"],
+      ["Archote", "&&classe_Archote", "&&nome_personagem"],
+      ["Combatente", "&&classe_Combatente", "&&nome_personagem"],
+      ["Saqueador", "&&classe_Saqueador", "&&nome_personagem"],
+      ["Caçador", "&&classe_Caçador", "&&nome_personagem"],
+      ["Carranca", "&&classe_Carranca", "&&nome_personagem"]
    ],
 
    "Ocultista Habilidade (Determinação)":[
@@ -102,7 +112,112 @@
       ["Historiador: <br> Em vantagem quando descobrir ou relembrar informações relativas ao sobrenatural vindas de tomos antigos;", "#Artefato" ],
       ["Médico da Praga: <br> Em vantagem quando tratar doenças e infestações.", "#Poção" ]
    ],
+
+   "Archote Habilidade (Determinação)":[
+      "Chama da Esperança: <br>Enquanto tiver determinação, nenhuma tocha acendida por você se apagará (somente se você quiser ou perder a consciência). Além disso, você pode exaurir 1-determinação para fazer uma jogada de desafio a fim de afastar desmortos através da sua vontade de ferro e fogo;",
+      "Chama da Vingança: <br>Você pode exaurir 1-determinação para imbuir uma arma ou suas mãos de fogo sobrenatural, e tornar possível tocar o intangível (espíritos, espectros…);"],
       
+   "Archote Habilidade":[
+      "Sangue nos olhos: <br>Em vantagem quando enfrentar monstruosidades;",
+      "Coragem líquida: <br>Você pode gastar 1-Preparo a fim de produzir 1-uso de licor ardente. Quando ingerir licor ardente receba +1d ao enfrentar desafios que requeiram ímpeto ou bravura;",
+      "Matador de Monstros: <br>efeito +1 ao causar dano em monstruosidades e aberrantes;",
+      "Desbravador da escuridão: <br>Reduza 1d de perigo quando explorar covis de monstruosidades e criaturas sobrenaturais.",
+      "Corvo de três olhos: <br>Você é capaz de sentir as correntes de miasma da desolação, se houver alguma criatura maligna nas proximidades, você saberá a direção;",
+      "Discurso inflamado: <br>Quando encorajar alguém durante o Descanso Curto, todos companheiros do grupo recebem os benefícios do seu apoio;"],
+      
+   "Archote Ocupação":[
+      "Devorador de Pecados: <br>em vantagem quando aliviar o sofrimento de espíritos;",
+      "Coveiro: <br>Em vantagem quando lidar com os mortos;",
+      "Coveiro: <br>Em vantagem quando lidar com os mortos;",
+      "Justiceiro: <br>Em vantagem quando lidar com alguém avesso às leis;",
+      "Justiceiro: <br>Em vantagem quando lidar com alguém avesso às leis;",
+      "Carcereiro: <br>Em vantagem quando lidar com criminosos;"],
+      
+      
+   "Combatente Habilidade (Determinação)":[
+      "Casca grossa: <br>1-Determinação que você possui é reservada como uma defesa especial. Quando exaurir seus itens de defesa para suportar danos físicos, sua determinação passa a ser tratada como um “item” de defesa;",
+      "Impiedoso: <br>Quando agir com violência, você pode marcar o uso da sua determinação para melhorar o resultado de uma jogada em 1 passo (Falha -> sucesso parcial -> total -> crítico);"],
+      
+   "Combatente Habilidade":[
+      "Marcial: <br>Vantagem quando atacar alguém em combate corpo a corpo;",
+      "Arma Reforjada: <br>Você realizou melhorias em sua arma favorita, quando atacar com ela adicione +1 ao causar dano;",
+      "Estrategista: <br>Vantagem quando reunir informações sobre as táticas inimigas; ",
+      "Muralha: <br>Vantagem quando Proteger alguém em combate (inclusive a si mesmo);",
+      "Contra tudo e todos: <br>Reduza 1d de perigo quando você enfrentar um inimigo de estatura maior ou for atacado por múltiplos adversários;",
+      "Reação brutal: <br>Você pode fazer uma Barganha Sombria e sofrer 1-Dano ao se expor ao ataque inimigo, se fizer isso adicione +2d em vez do benefício normal;"],
+      
+   "Combatente Ocupação":[
+      "Ferreiro: <br>Vantagem quando fizer uma avaliação de armas e armaduras ao Saquear;",
+      "Mercenário: <br>Vantagem quando intimidar alguém através da violência;",
+      "Mercenário: <br>Vantagem quando intimidar alguém através da violência;",
+      "Soldado: <br>Vantagem quando seguir uma estratégia em combate;",
+      "Soldado: <br>Vantagem quando seguir um Comando em combate;",
+      "Escavador: <br>Em vantagem quando estiver em uma travessia pelo subterrâneo;"],
+      
+      
+      
+   "Saqueador Habilidade (Determinação)":[
+      "Sortudo: <br>Quando sofrer uma consequência, você pode gastar 1-determinação para evitá-la (descreva como);",
+      "Dança do Diabo: <br>Quando estiver em combate direto, você pode gastar 1-determinação para se esquivar dos seus inimigos fazendo com que ataquem uns aos outros ou realizar um feito de atletismo quase sobrenatural;"],
+      
+   "Saqueador Habilidade":[
+      "Loroteiro: <br>Vantagem quando enganar alguém através da lábia e subterfúgios;",
+      "Sombra: <br>Em vantagem quando agir furtivamente;",
+      "Olho-vivo: <br>Vantagem para tentar encontrar algo valioso ou útil;",
+      "Engenhoso: <br>Vantagem para destrancar fechaduras e armadilhas;",
+      "Tramonte: <br>Você aprendeu a desenvolver ferramentas de alta qualidade. Você pode gastar 1-Preparo e descrever algum item que carrega para falsificação, arrombamento, escalada ou subterfúgio. Receba efeito+1 ao utilizá-lo;",
+      "Oportunista: <br>Quando aproveitar uma boa oportunidade (após receber ajuda, seguir um líder ou depois de agir com tal intento), trate o sucesso total como um crítico;"],
+      
+   "Saqueador Ocupação":[
+      "Gatuno: <br>Em vantagem quando colocar seu equilíbrio e flexibilidade à prova;",
+      "Contrabandista: <br>Em vantagem quando Saquear objetos de valor (documentos, quadros, livros, tecidos);",
+      "Contrabandista: <br>Em vantagem quando Saquear objetos de valor (documentos, quadros, livros, tecidos);",
+      "Mercador de ossos: <br>Em vantagem quando Saquear algo valioso de uma monstruosidade;",
+      "Mercador de ossos: <br>Em vantagem quando Saquear algo valioso de uma monstruosidade;",
+      "Trovador: <br> Em vantagem quando realizar um Descanso Curto;"],
+      
+      
+      
+   "Caçador Habilidade (Determinação)":[
+      "Disparo impossível: <br>Você pode exaurir 1-determinação para realizar um disparo impossível (a distâncias inalcançáveis ou com precisão absurda);",
+      "Afugentar Bestas: <br>Quando fizer uma jogada de desafio para impor medo e afugentá-la com gestos, grunhidos e urros que ela reconhece como a de um predador digno, você pode exaurir 1-determinação para melhorar o resultado da jogada em 1 passo (azar/falha < sucesso parcial < sucesso total < crítico);"],
+      
+   "Caçador Habilidade":[
+      "Olho de águia: <br>Quando atacar um inimigo com uma arma de longo alcance, você pode rolar 1d adicional sempre que obtiver um resultado igual a 6;",
+      "Companheiro animal: <br>Você possui um animal de caça leal e treinado (conta como um apoio). Quando combater ou rastrear uma “caça” juntos receba efeito +1;",
+      "Camaleão: <br>Quando fizer uma jogada de desafio para utilizar uma camuflagem para se manter oculto, com um sucesso você permanece indetectável mesmo que esteja bem diante do oponente;",
+      "Armadilheiro: <br>Quando fizer uma jogada de desafio para preparar uma armadilha a fim de imobilizar ou enfraquecer uma caça que esteja nas redondezas, gaste 1-Preparo e descreva como a atrai. Enquanto a caça estiver presa ou enfraquecida o nível de perigo dela é reduzido em 2d;",
+      "Minha Grande Caçada: <br>Quando estiver em um Descanso Curto e Curar a Alma enquanto se abre para alguém contando sobre uma grande caçada, alivie 1-Ruína adicional;",
+      "Munições especiais: <br>Você pode gastar 1-Preparo para produzir 1 uso de uma munição especial com um dos seguintes rótulos: <br>Incendiário, Atrativo, Entorpecente;"],
+      
+   "Caçador Ocupação":[
+      "Esfolador: <br>em vantagem quando Saquear algo valioso de um animal ou fera (dentes, pele, cabeça para empalhamento, vísceras, sangue para poções, etc);",
+      "Patrulheiro: <br>Em vantagem ao rastrear algo ou alguém;",
+      "Patrulheiro: <br>Em vantagem ao rastrear algo ou alguém;",
+      "Atirador: <br>em vantagem quando realizar disparos com precisão;",
+      "Atirador: <br>em vantagem quando realizar disparos com precisão;",
+      "Batedor: <br>Quando Ajudar Alguém que lidera uma travessia, ele recebe +2d;"],
+      
+   "Carranca Habilidade (Determinação)":[
+      "Máscara Ancestral: <br>Você possui um fragmento imbuído pela força da natureza do mundo antigo. Uma máscara feita a partir de um extinto animal guardião ou árvore primordial, que foi intocada pela Desolação. Você pode exaurir 1-determinação para deixar fluir a imaculada quintessência bestial ou virente da natureza desolada através de si e conjurar um efeito a partir dela (com vantagem);",
+      "Lembranças da terra: <br>Quando sintonizar com as terras desoladas a fim de resgatar e compartilhar lembranças sobre acontecimentos antigos ou recentes do lugar, você pode exaurir 1-determinação. O Oráculo dará uma informação interessante e útil sobre isso;"
+   ],   
+   "Carranca Habilidade":[
+      "Calejado: <br>Em vantagem enfrentar os perigos naturais da Desolação (frio, calor, intempéries, acidentes geográficos, etc);",
+      "Sangue de serpente: <br>Reduza o perigo ao mínimo (0d) quando sofrer dano de venenos e doenças provocadas pela natureza Desolada;",
+      "Emplastro: <br>Você reconhece as plantas, fungos, larvas e insetos das terras desoladas que podem ser usados para produzir antitoxinas. Quando gastar 1-Preparo a fim de produzir 1 uso da antitoxina, descreva como faz isso e o que utiliza. Ao utilizar a antitoxina durante uma jogada de desafio, trate um sucesso parcial como total, e uma falha como sucesso parcial;",
+      "Catador: <br>Você reconhece qualquer coisa minimamente comestível dos ermos e terras desoladas. Enquanto estiver fazendo uma travessia descreva o que você coleta (pedaços de carne não degenerados, fungos livres do miasma). Quando Partilhar no Descanso Curto, ao gastar 1-Preparo o benefício da atividade é estendida para todos do grupo;",
+      "Compreensão bestial: <br>Você pode fazer uma jogada de desafio para demonstrar respeito a um animal ou fera a fim de estabelecer uma comunicação empática com ele;",
+      "Acalmar a fúria do mundo: <br>Quando estiver em um Descanso Curto e Curar a Alma, em vez de aliviar a Ruína você pode reduzir o nível de Opressão do cenário em 1;"
+   ],    
+   "Carranca Ocupação":[
+      "Curandeiro: <br>Em vantagem quando tratar alguém incapacitado (remova a desvantagem com um sucesso);",
+      "Exilado: <br>Em vantagem quando lidar com os povos da Desolação;",
+      "Exilado: <br>Em vantagem quando lidar com os povos da Desolação;",
+      "Guia: <br>Em vantagem quando Liderar uma travessia pela natureza desolada;",
+      "Guia: <br>Em vantagem quando Liderar uma travessia pela natureza desolada;",
+      "Eremita: <br>Quando Ajudar Alguém durante uma travessia pela natureza desolada, ele recebe +2d em vez de +1d;"
+   ],    
 
 
    "test":{

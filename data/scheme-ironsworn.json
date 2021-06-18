@@ -8,16 +8,15 @@
         "color" : "primary",
         "column" : 1,
         "buttons" : {
-            "button_1" : {
+            "personagem" : {
                 "text" : "Personagem",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
                 "grouped_color" : "warning",
                 "tables" : [
-                    {"text" : "Nome", "table" : "Nome", "repeat" : 1},
-                    {"text" : "Classe", "table" : "Classe", "repeat" : 1}]
+                    {"text" : "Personagem", "table" : "Personagem", "repeat" : 1}]
             },
-            "button_2" : {
+            "classe" : {
                 "text" : "Classe",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -30,10 +29,10 @@
     },
     "classes" : {
         "text" :  "Classes",
-        "color" : "secondary",
+        "color" : "primary",
         "column" : 1,
         "buttons" : {           
-            "button_1" : {
+            "classe_Ocultista" : {
                 "text" : "Ocultista",        
                 "icon" : "fas fa-exclamation fa-lg",
                 "grouped" : true,
@@ -42,6 +41,56 @@
                     {"text" : "Ocultista<br>• Habilidade", "table" : "Ocultista Habilidade", "repeat" : 1},
                     {"text" : "Habilidade (Determinação)", "table" : "Ocultista Habilidade (Determinação)", "repeat" : 1},
                     {"text" : "Ocupação", "table" : "Ocultista Ocupação", "repeat" : 1}]
+            },
+            "classe_Archote" : {
+                "text" : "Archote",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Archote<br>• Habilidade", "table" : "Archote Habilidade", "repeat" : 1},
+                    {"text" : "Habilidade (Determinação)", "table" : "Archote Habilidade (Determinação)", "repeat" : 1},
+                    {"text" : "Ocupação", "table" : "Archote Ocupação", "repeat" : 1}]
+            },
+            "classe_Combatente" : {
+                "text" : "Combatente",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Combatente<br>• Habilidade", "table" : "Combatente Habilidade", "repeat" : 1},
+                    {"text" : "Habilidade (Determinação)", "table" : "Combatente Habilidade (Determinação)", "repeat" : 1},
+                    {"text" : "Ocupação", "table" : "Combatente Ocupação", "repeat" : 1}]
+            },
+            "classe_Saqueador" : {
+                "text" : "Saqueador",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Saqueador<br>• Habilidade", "table" : "Saqueador Habilidade", "repeat" : 1},
+                    {"text" : "Habilidade (Determinação)", "table" : "Saqueador Habilidade (Determinação)", "repeat" : 1},
+                    {"text" : "Ocupação", "table" : "Saqueador Ocupação", "repeat" : 1}]
+            },
+            "classe_Caçador" : {
+                "text" : "Caçador",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Caçador<br>• Habilidade", "table" : "Caçador Habilidade", "repeat" : 1},
+                    {"text" : "Habilidade (Determinação)", "table" : "Caçador Habilidade (Determinação)", "repeat" : 1},
+                    {"text" : "Ocupação", "table" : "Caçador Ocupação", "repeat" : 1}]
+            },
+            "classe_Carranca" : {
+                "text" : "Carranca",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : true,
+                "grouped_color" : "warning",
+                "tables" : [
+                    {"text" : "Carranca<br>• Habilidade", "table" : "Carranca Habilidade", "repeat" : 1},
+                    {"text" : "Habilidade (Determinação)", "table" : "Carranca Habilidade (Determinação)", "repeat" : 1},
+                    {"text" : "Ocupação", "table" : "Carranca Ocupação", "repeat" : 1}]
             }
         }
     },
@@ -50,7 +99,7 @@
         "color" : "secondary",
         "column" : 2,
         "buttons" : {           
-            "button_1" : {
+            "nome_personagem" : {
                 "text" : "Nome Personagem",        
                 "icon" : "fas fa-exclamation fa-lg",
                 "grouped" : true,

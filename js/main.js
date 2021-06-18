@@ -1,6 +1,6 @@
 $('#ModalLog').modal({show:false})
-table_data_str = "soturnos_table_data"
-scheme_data_str = "soturnos_scheme_data"
+table_data_str = "starforged_en_table_data"
+scheme_data_str = "starforged_en_scheme_data"
 
 function findBootstrapEnvironment() {
     let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
@@ -130,12 +130,13 @@ function create_panel(scheme_data){
                 var text_button = btn['text'];                
                 var icon_button = btn['icon'];
                 var grouped_button = btn['grouped'];
-                var grouped_color = btn['grouped_color'];
+                var grouped_color = btn['grouped_color'];                
                 
                 // create button
                 var temp_btn = document.createElement('button');
                 temp_btn.className = 'btn btn-'+color_group+' btn-block btn-sm';
                 temp_btn.type = 'button';
+                temp_btn.id = button;
                 var temp_icon = document.createElement('i');
                 temp_icon.className = icon_button;
                 temp_icon.setAttribute('aria-hidden', 'true');
@@ -157,7 +158,7 @@ function create_panel(scheme_data){
 
 function table_choose(field) {
     //Action function to make a random table value
-
+    skip_output = false
     var grouped = field['grouped']; // if border in log
     var grouped_color = field['grouped_color']; // color to border in log    
 
@@ -193,7 +194,11 @@ function table_choose(field) {
             if (typeof(table_temp[idx]) == 'string'){
                 var table_text = table_temp[idx];
                 // if special characteres for relationship between tables
-                if (table_text.indexOf('##') == 0){
+                if (table_text.indexOf('&&') == 0){
+                    document.getElementById(table_text.substr(2)).click()
+                    skip_output = true
+                }
+                else if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2))
                     str_temp += '({0}) {1}'.format(idx+1, table_text);
                 }
@@ -210,7 +215,11 @@ function table_choose(field) {
                 for (obj in table_temp[idx]){
                     var table_text = table_temp[idx][obj];
                     // if special characteres for relationship between tables
-                    if (table_text.indexOf('##') == 0){
+                    if (table_text.indexOf('&&') == 0){
+                        document.getElementById(table_text.substr(2)).click()
+                        skip_output = true
+                    }
+                    else if (table_text.indexOf('##') == 0){
                         table_text = table_choose_recursive(table_text.substr(2))
                         str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
                     }
@@ -237,8 +246,10 @@ function table_choose(field) {
     if (grouped){        
         str_log = '<div class="border border-{0} p-1 mb-1 mt-2 rounded">{1}</div>'.format(grouped_color, str_log)
     }
-    // add in log
-    insert_data(str_log);
+    if(skip_output == false){
+        // add in log
+        insert_data(str_log);
+    }
 }
 
 function table_choose_recursive(field) {
@@ -248,7 +259,10 @@ function table_choose_recursive(field) {
         var idx = rand_int(rec_data)
         var temp_str = rec_data[idx];
         if (typeof(temp_str) == 'string'){
-            if (temp_str.indexOf('##') == 0){
+            if (temp_str.indexOf('&&') == 0){
+                document.getElementById(table_text.substr(2)).click()
+            }
+            else if (temp_str.indexOf('##') == 0){
                 temp_str = table_choose_recursive(temp_str.substr(2));
                 return '<i>({0})</i>({1}) {2}'.format(field, (idx+1).toString(), temp_str);
             }
@@ -264,7 +278,10 @@ function table_choose_recursive(field) {
                 str_temp += '<br/>'                
                 var table_text = temp_str[obj];
                 // if special characteres for relationship between tables                
-                if (table_text.indexOf('##') == 0){
+                if (table_text.indexOf('&&') == 0){
+                    document.getElementById(table_text.substr(2)).click()
+                }
+                else if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2));
                     str_temp +=  '{0}'.format(table_text);
                 }
