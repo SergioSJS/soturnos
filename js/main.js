@@ -1,6 +1,6 @@
 $('#ModalLog').modal({show:false})
-table_data_str = "starforged_en_table_data"
-scheme_data_str = "starforged_en_scheme_data"
+table_data_str = "soturnos_pt_table_data"
+scheme_data_str = "soturnos_pt_scheme_data"
 
 function findBootstrapEnvironment() {
     let envs = ['xs', 'sm', 'md', 'lg', 'xl'];

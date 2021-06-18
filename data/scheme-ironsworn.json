@@ -1,7 +1,7 @@
 {
     "settings" : {
         "logo_dir" : "data/ironlog.png",
-        "iron_oracle" : true
+        "iron_oracle" : false
     },
     "atalhos" : {
         "text" :  "Atalhos",
